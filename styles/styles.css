@@ -114,6 +114,12 @@ body {
   line-height: 14px;
 }
 
+@media screen and (max-width: 1200px) {
+  :root {
+    --container-size: 990px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   :root {
     --container-size: 850px;
