@@ -1,0 +1,55 @@
+.firm {
+  --container-size: 764px;
+}
+
+.firm__inner {
+  margin-top: calc(94px / var(--size));
+  margin-bottom: calc(129px / var(--size));
+  display: flex;
+  justify-content: space-between;
+}
+
+.firm__title {
+  font-size: 32px;
+  line-height: var(--title-line-height);
+}
+
+.firm__text {
+  padding-top: 6px;
+}
+
+.firm__paragraph {
+  max-width: 499px;
+  margin-bottom: 10px;
+}
+
+.firm__v-card {
+  padding-top: 7px;
+}
+
+@media screen and (max-width: 992px) {
+  .firm__inner {
+    display: block;
+  }
+
+  .firm__title {
+    font-size: var(--title-font-size);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .firm__paragraph {
+    margin: 0 auto;
+    padding: 0 25px;
+  }
+
+  .firm__v-card {
+    margin: 20px auto 0;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .firm {
+    --container-size: 390px;
+  }
+}

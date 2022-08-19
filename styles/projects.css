@@ -1,0 +1,109 @@
+.projects {
+  padding: calc(114px / var(--size)) 0 calc(100px / var(--size));
+  background-color: #f7f7f7;
+}
+
+.projects__title {
+  font-size: var(--title-font-size);
+  line-height: var(--title-line-height);
+}
+
+.projects__text {
+  max-width: 581px;
+  margin-top: 14px;
+  margin-bottom: calc(44px / var(--size));
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.projects__cards {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.projects__card {
+  width: 375px;
+  height: 456px;
+  padding: 41px;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.projects__card-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+
+.projects__card:hover .projects__card-inner {
+  opacity: 1;
+}
+
+.projects__card_malmo {
+  background-image: url("../img/malmo.jpg");
+}
+
+.projects__card_new-york {
+  background-image: url("../img/new-york.jpg");
+}
+
+.projects__card_london {
+  background-image: url("../img/london.jpg");
+}
+
+.projects__name {
+  flex-grow: 1;
+  font-size: 23px;
+  line-height: 29px;
+  color: #403e3b;
+}
+
+.projects__link.button {
+  width: 133px;
+}
+
+.projects__button {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .projects {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .projects__card {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .projects__text {
+    font-size: 21px;
+  }
+
+  .projects__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects__card {
+    width: 80%;
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projects__text {
+    font-size: 19px;
+    line-height: 25px;
+  }
+
+  .projects__card {
+    width: 90%;
+  }
+}

@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@import url("header.css");
+@import url("intro.css");
+@import url("firm.css");
+@import url("design.css");
+@import url("process.css");
+@import url("customers.css");
+@import url("projects.css");
+@import url("team.css");
+@import url("contact.css");
+@import url("footer.css");
+
+:root {
+  --color-primary: #000000;
+  --background-color-main: #ffffff;
+  --background-color-secondary: #ece7e4;
+  --container-size: 1167px;
+  --button-width: 155px;
+  --button-height: 46px;
+  --size: 1;
+  --title-font-size: 39px;
+  --title-line-height: 42px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: var(--background-color-main);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.container {
+  max-width: var(--container-size);
+  margin: 0 auto;
+}
+
+.button {
+  width: var(--button-width);
+  height: var(--button-height);
+  display: block;
+  border: 1px solid var(--color-primary);
+  border-radius: 14px;
+  line-height: var(--button-height);
+  text-align: center;
+  background-color: transparent;
+  color: var(--color-primary);
+  letter-spacing: 0.4px;
+  transition: all 0.1s ease-in;
+}
+
+.button_black {
+  background-color: var(--color-primary);
+  color: var(--background-color-main);
+}
+
+.button:hover {
+  background-color: var(--color-primary);
+  color: var(--background-color-main);
+}
+
+.button_black:hover {
+  background-color: transparent;
+  color: var(--color-primary);
+}
+
+.button:active {
+  background-color: #c79976;
+}
+
+.title {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.v-card {
+  width: 243px;
+  display: flex;
+  align-items: center;
+}
+
+.v-card__img {
+  width: 84px;
+  height: 84px;
+  margin-right: 29px;
+}
+
+.v-card__name {
+  font-size: 17px;
+  line-height: 26px;
+}
+
+.v-card__position {
+  position: relative;
+  bottom: 3px;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    --container-size: 850px;
+    --size: 1.5;
+    --title-font-size: 32px;
+    --title-line-height: 38px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  :root {
+    --container-size: 550px;
+    --size: 2;
+    --title-font-size: 30px;
+    --title-line-height: 36px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  :root {
+    --container-size: 440px;
+    --size: 2.5;
+    --title-font-size: 27px;
+    --title-line-height: 33px;
+  }
+
+  body {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
